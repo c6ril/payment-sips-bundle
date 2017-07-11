@@ -1,9 +1,9 @@
 <?php
 
-namespace Kptive\PaymentSipsBundle;
+namespace c6ril\PaymentSipsBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class KptivePaymentSipsBundle extends Bundle
+class c6rilPaymentSipsBundle extends Bundle
 {
 }

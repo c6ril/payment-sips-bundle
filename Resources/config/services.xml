@@ -5,23 +5,23 @@
     xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <parameters>
-        <parameter key="kptive_payment_sips.client.class">Kptive\PaymentSipsBundle\Client\Client</parameter>
-        <parameter key="kptive_payment_sips.return_handler.class">Kptive\PaymentSipsBundle\Plugin\ReturnHandler</parameter>
-        <parameter key="kptive_payment_sips.plugin.class">Kptive\PaymentSipsBundle\Plugin\SipsPlugin</parameter>
+        <parameter key="c6ril_payment_sips.client.class">c6ril\PaymentSipsBundle\Client\Client</parameter>
+        <parameter key="c6ril_payment_sips.return_handler.class">c6ril\PaymentSipsBundle\Plugin\ReturnHandler</parameter>
+        <parameter key="c6ril_payment_sips.plugin.class">c6ril\PaymentSipsBundle\Plugin\SipsPlugin</parameter>
     </parameters>
 
     <services>
-        <service id="kptive_payment_sips.client" class="%kptive_payment_sips.client.class%">
+        <service id="c6ril_payment_sips.client" class="%c6ril_payment_sips.client.class%">
             <argument type="service" id="logger" />
-            <argument>%kptive_payment_sips.bin%</argument>
-            <argument>%kptive_payment_sips.config%</argument>
+            <argument>%c6ril_payment_sips.bin%</argument>
+            <argument>%c6ril_payment_sips.config%</argument>
         </service>
 
-        <service id="kptive_payment_sips.return_handler" class="%kptive_payment_sips.return_handler.class%">
+        <service id="c6ril_payment_sips.return_handler" class="%c6ril_payment_sips.return_handler.class%">
             <argument type="service" id="payment.plugin_controller" />
         </service>
 
-        <service id="kptive_payment_sips.plugin" class="%kptive_payment_sips.plugin.class%">
+        <service id="c6ril_payment_sips.plugin" class="%c6ril_payment_sips.plugin.class%">
             <tag name="payment.plugin" />
             <argument type="service" id="logger" />
         </service>

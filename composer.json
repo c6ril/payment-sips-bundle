@@ -1,14 +1,14 @@
 {
-    "name": "kptive/payment-sips-bundle",
+    "name": "c6ril/payment-sips-bundle",
     "type": "symfony-bundle",
     "description": "Payment Bundle providing access to the ATOS SIPS solution",
     "keywords": ["payment", "atos", "sips", "mercanet", "cyberplus", "elysnet", "scellius","sogenactif", "webaffaires", "sherlocks", "citelis", "accord"],
-    "homepage": "http://github.com/KptiveStudio/KptivePaymentSipsBundle",
+    "homepage": "https://github.com/c6ril/payment-sips-bundle",
     "license": "MIT",
     "authors": [
         {
-            "name":     "KptiveStudio",
-            "homepage": "http://kptivestudio.com"
+            "name":     "c6rilStudio",
+            "homepage": "http://c6rilstudio.com"
         },
         {
             "name": "Hubert Moutot",
@@ -24,7 +24,7 @@
         "doctrine/common": "*"
     },
     "autoload": {
-        "psr-4": { "Kptive\\PaymentSipsBundle\\": "" }
+        "psr-4": { "c6ril\\PaymentSipsBundle\\": "" }
     },
     "extra": {
         "branch-alias": {

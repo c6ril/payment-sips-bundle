@@ -1,6 +1,6 @@
 <?php
 
-namespace Kptive\PaymentSipsBundle\Plugin;
+namespace c6ril\PaymentSipsBundle\Plugin;
 
 use JMS\Payment\CoreBundle\Model\FinancialTransactionInterface;
 use JMS\Payment\CoreBundle\Plugin\PluginInterface;

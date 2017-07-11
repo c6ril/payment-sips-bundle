@@ -1,6 +1,6 @@
 <?php
 
-namespace Kptive\PaymentSipsBundle\DependencyInjection;
+namespace c6ril\PaymentSipsBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
@@ -15,7 +15,7 @@ class Configuration implements ConfigurationInterface
         $treeBuilder = new TreeBuilder();
 
         return $treeBuilder
-            ->root('kptive_payment_sips', 'array')
+            ->root('c6ril_payment_sips', 'array')
                 ->children()
                     ->arrayNode('config')
                         ->children()

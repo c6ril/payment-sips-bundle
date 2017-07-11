@@ -1,10 +1,10 @@
-KptivePaymentSipsBundle
+c6rilPaymentSipsBundle
 =======================
 
-[![Build Status](https://secure.travis-ci.org/KptiveStudio/KptivePaymentSipsBundle.png?branch=master)](http://travis-ci.org/KptiveStudio/KptivePaymentSipsBundle)
+[![Build Status](https://secure.travis-ci.org/c6rilStudio/c6rilPaymentSipsBundle.png?branch=master)](http://travis-ci.org/c6rilStudio/c6rilPaymentSipsBundle)
 
 
-The `KptivePaymentSipsBundle` provides access to the Atos Worldline SIPS payment solution through
+The `c6rilPaymentSipsBundle` provides access to the Atos Worldline SIPS payment solution through
 the [JMSPaymentCoreBundle](https://github.com/schmittjoh/JMSPaymentCoreBundle).
 
 The following payment services are powered by Atos SIPS:
@@ -29,7 +29,7 @@ Installation
 Run:
 
 ``` bash
-$ php composer.phar require kptive/payment-sips-bundle
+$ php composer.phar require c6ril/payment-sips-bundle
 ```
 
 Or add the following to your `composer.json` before updating your vendors:
@@ -37,7 +37,7 @@ Or add the following to your `composer.json` before updating your vendors:
 ``` js
 {
     "require": {
-        "kptive/payment-sips-bundle": "*@dev"
+        "c6ril/payment-sips-bundle": "*@dev"
     }
 }
 ```
@@ -57,7 +57,7 @@ You will also have to register the `JMSPaymentCoreBundle` and
         $bundles = array(
             // ...
             new JMS\Payment\CoreBundle\JMSPaymentCoreBundle(),
-            new Kptive\PaymentSipsBundle\KptivePaymentSipsBundle(),
+            new c6ril\PaymentSipsBundle\c6rilPaymentSipsBundle(),
         );
 
         // ...
@@ -80,7 +80,7 @@ Configuration
 -------------
 
 ``` yaml
-kptive_payment_sips:
+c6ril_payment_sips:
     config:
         merchant_id: "082584341411111"
         merchant_country: fr
@@ -258,7 +258,7 @@ Let's implement the corresponding action:
      */
     public function sipsGatewayAction(Order $order)
     {
-        $client = $this->get('kptive_payment_sips.client');
+        $client = $this->get('c6ril_payment_sips.client');
 
         $config = array(
             'amount' => $order->getAmount() * 100,
@@ -295,13 +295,13 @@ Let's implement the action :
     {
         $data = $request->request->get('DATA');
         $em = $this->get('doctrine')->getEntityManager();
-        $client = $this->get('kptive_payment_sips.client');
+        $client = $this->get('c6ril_payment_sips.client');
 
         $response = $client->handleResponseData($data);
         $order = $em->getRepository('KsPaymentBundle:Order')->find($response['order_id']);
         $instruction = $order->getPaymentInstruction();
 
-        $result = $this->get('kptive_payment_sips.return_handler')->handle($instruction, $response);
+        $result = $this->get('c6ril_payment_sips.return_handler')->handle($instruction, $response);
 
         return array('order' => $order);
     }
@@ -377,7 +377,7 @@ check the ownership of the order!
 Credits
 -------
 
-* KptiveStudio <http://kptivestudio.com>
+* c6rilStudio <http://c6rilstudio.com>
 * Hubert Moutot <hubert.moutot@gmail.com>
 
 A great thank you to Johannes M Schmitt for his awesome JMSPayementCoreBundle.
@@ -387,5 +387,5 @@ Thanks to https://github.com/Kitano/KitanoPaymentSipsBundle for the inspiration.
 License
 -------
 
-KptivePaymentSipsBundle is released under the MIT License.
+c6rilPaymentSipsBundle is released under the MIT License.
 See the bundled LICENSE file for details.

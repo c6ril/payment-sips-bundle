@@ -1,12 +1,12 @@
 <?php
 
-namespace Kptive\PaymentSipsBundle\Tests\Plugin;
+namespace c6ril\PaymentSipsBundle\Tests\Plugin;
 
 use JMS\Payment\CoreBundle\Entity\FinancialTransaction;
 use JMS\Payment\CoreBundle\Entity\ExtendedData;
 use JMS\Payment\CoreBundle\Model\FinancialTransactionInterface;
 use JMS\Payment\CoreBundle\Plugin\PluginInterface;
-use Kptive\PaymentSipsBundle\Plugin\SipsPlugin;
+use c6ril\PaymentSipsBundle\Plugin\SipsPlugin;
 
 /**
  * @author Hubert Moutot <hubert.moutot@gmail.com>

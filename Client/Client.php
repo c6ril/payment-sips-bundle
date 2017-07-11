@@ -1,10 +1,10 @@
 <?php
 
-namespace Kptive\PaymentSipsBundle\Client;
+namespace c6ril\PaymentSipsBundle\Client;
 
 use Psr\Log\LoggerInterface;
 use Symfony\Component\Process\Process;
-use Kptive\PaymentSipsBundle\Exception\PaymentRequestException;
+use c6ril\PaymentSipsBundle\Exception\PaymentRequestException;
 
 class Client
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Kptive\PaymentSipsBundle\Exception;
+namespace c6ril\PaymentSipsBundle\Exception;
 
 use JMS\Payment\CoreBundle\Exception\Exception;
 
