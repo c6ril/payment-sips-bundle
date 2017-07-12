@@ -21,12 +21,5 @@
     },
     "autoload": {
         "psr-4": { "c6ril\\PaymentSipsBundle\\": "" }
-    },
-
-    "extra": {
-        "branch-alias": {
-            "dev-master": "1.*"
-        }
     }
-    ]
 }
