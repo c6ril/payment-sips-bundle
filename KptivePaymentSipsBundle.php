@@ -1,6 +1,6 @@
 <?php
 
-namespace toodiz\PaymentSipsBundle;
+namespace Toodiz\PaymentSipsBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 

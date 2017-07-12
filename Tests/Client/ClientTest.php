@@ -1,6 +1,6 @@
 <?php
 
-namespace toodiz\PaymentSipsBundle\Tests\Client;
+namespace Toodiz\PaymentSipsBundle\Tests\Client;
 
 /**
  * @author Hubert Moutot <hubert.moutot@gmail.com>
@@ -19,7 +19,7 @@ class ClientTest extends \PHPUnit_Framework_TestCase
         $bin = array('request_bin' => '', 'response_bin' => '');
         $config = array('pathfile' => '');
 
-        $this->client = $this->getMock('toodiz\PaymentSipsBundle\Client\Client', array('run'), array($logger, $bin, $config));
+        $this->client = $this->getMock('Toodiz\PaymentSipsBundle\Client\Client', array('run'), array($logger, $bin, $config));
     }
 
     public function testRequestFailed()
@@ -30,7 +30,7 @@ class ClientTest extends \PHPUnit_Framework_TestCase
             ->will($this->returnValue('!-1!wrong card number!!'));
 
         $this->setExpectedException(
-            'toodiz\PaymentSipsBundle\Exception\PaymentRequestException',
+            'Toodiz\PaymentSipsBundle\Exception\PaymentRequestException',
             'SIPS Request failed with the following error: wrong card number'
         );
 
@@ -45,7 +45,7 @@ class ClientTest extends \PHPUnit_Framework_TestCase
             ->will($this->returnValue('!!!!'));
 
         $this->setExpectedException(
-            'toodiz\PaymentSipsBundle\Exception\PaymentRequestException',
+            'Toodiz\PaymentSipsBundle\Exception\PaymentRequestException',
             'SIPS Request failed. Output: !!!!'
         );
 

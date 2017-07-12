@@ -1,6 +1,6 @@
 <?php
 
-namespace toodiz\PaymentSipsBundle\DependencyInjection;
+namespace Toodiz\PaymentSipsBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;

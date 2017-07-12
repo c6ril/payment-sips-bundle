@@ -1,6 +1,6 @@
 <?php
 
-namespace toodiz\PaymentSipsBundle\DependencyInjection;
+namespace Toodiz\PaymentSipsBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;

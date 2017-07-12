@@ -1,12 +1,12 @@
 <?php
 
-namespace toodiz\PaymentSipsBundle\Tests\Plugin;
+namespace Toodiz\PaymentSipsBundle\Tests\Plugin;
 
 use JMS\Payment\CoreBundle\Entity\FinancialTransaction;
 use JMS\Payment\CoreBundle\Entity\ExtendedData;
 use JMS\Payment\CoreBundle\Model\FinancialTransactionInterface;
 use JMS\Payment\CoreBundle\Plugin\PluginInterface;
-use toodiz\PaymentSipsBundle\Plugin\SipsPlugin;
+use Toodiz\PaymentSipsBundle\Plugin\SipsPlugin;
 
 /**
  * @author Hubert Moutot <hubert.moutot@gmail.com>

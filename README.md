@@ -4,7 +4,7 @@ KptivePaymentSipsBundle
 [![Build Status](https://secure.travis-ci.org/c6rilStudio/c6rilPaymentSipsBundle.png?branch=master)](http://travis-ci.org/c6rilStudio/c6rilPaymentSipsBundle)
 
 
-The `toodizPaymentSipsBundle` provides access to the Atos Worldline SIPS payment solution through
+The `ToodizPaymentSipsBundle` provides access to the Atos Worldline SIPS payment solution through
 the [JMSPaymentCoreBundle](https://github.com/schmittjoh/JMSPaymentCoreBundle).
 
 The following payment services are powered by Atos SIPS:
@@ -29,7 +29,7 @@ Installation
 Run:
 
 ``` bash
-$ php composer.phar require toodiz/payment-sips-bundle
+$ php composer.phar require Toodiz/payment-sips-bundle
 ```
 
 Or add the following to your `composer.json` before updating your vendors:
@@ -37,7 +37,7 @@ Or add the following to your `composer.json` before updating your vendors:
 ``` js
 {
     "require": {
-        "toodiz/payment-sips-bundle": "*@dev"
+        "Toodiz/payment-sips-bundle": "*@dev"
     }
 }
 ```
@@ -57,7 +57,7 @@ You will also have to register the `JMSPaymentCoreBundle` and
         $bundles = array(
             // ...
             new JMS\Payment\CoreBundle\JMSPaymentCoreBundle(),
-            new toodiz\PaymentSipsBundle\c6rilPaymentSipsBundle(),
+            new Toodiz\PaymentSipsBundle\c6rilPaymentSipsBundle(),
         );
 
         // ...

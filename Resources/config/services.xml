@@ -5,9 +5,9 @@
     xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <parameters>
-        <parameter key="kptive_payment_sips.client.class">toodiz\PaymentSipsBundle\Client\Client</parameter>
-        <parameter key="kptive_payment_sips.return_handler.class">toodiz\PaymentSipsBundle\Plugin\ReturnHandler</parameter>
-        <parameter key="kptive_payment_sips.plugin.class">toodiz\PaymentSipsBundle\Plugin\SipsPlugin</parameter>
+        <parameter key="kptive_payment_sips.client.class">Toodiz\PaymentSipsBundle\Client\Client</parameter>
+        <parameter key="kptive_payment_sips.return_handler.class">Toodiz\PaymentSipsBundle\Plugin\ReturnHandler</parameter>
+        <parameter key="kptive_payment_sips.plugin.class">Toodiz\PaymentSipsBundle\Plugin\SipsPlugin</parameter>
     </parameters>
 
     <services>

@@ -1,6 +1,6 @@
 <?php
 
-namespace toodiz\PaymentSipsBundle\Exception;
+namespace Toodiz\PaymentSipsBundle\Exception;
 
 use JMS\Payment\CoreBundle\Exception\Exception;
 

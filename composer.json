@@ -1,9 +1,9 @@
 {
-    "name": "toodiz/payment-sips-bundle",
+    "name": "Toodiz/payment-sips-bundle",
     "type": "symfony-bundle",
     "description": "",
     "keywords": [],
-    "homepage": "https://github.com/toodiz/payment-sips-bundle",
+    "homepage": "https://github.com/Toodiz/payment-sips-bundle",
     "license": "MIT",
     "authors": [
         {
@@ -20,6 +20,6 @@
         "doctrine/common": "*"
     },
     "autoload": {
-        "psr-4": { "toodiz\\PaymentSipsBundle\\": "" }
+        "psr-4": { "Toodiz\\PaymentSipsBundle\\": "" }
     }
 }
