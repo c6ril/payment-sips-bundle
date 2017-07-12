@@ -4,7 +4,7 @@ KptivePaymentSipsBundle
 [![Build Status](https://secure.travis-ci.org/c6rilStudio/c6rilPaymentSipsBundle.png?branch=master)](http://travis-ci.org/c6rilStudio/c6rilPaymentSipsBundle)
 
 
-The `c6rilPaymentSipsBundle` provides access to the Atos Worldline SIPS payment solution through
+The `toodizPaymentSipsBundle` provides access to the Atos Worldline SIPS payment solution through
 the [JMSPaymentCoreBundle](https://github.com/schmittjoh/JMSPaymentCoreBundle).
 
 The following payment services are powered by Atos SIPS:
