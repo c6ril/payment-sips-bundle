@@ -1,9 +1,9 @@
 {
-    "name": "c6ril/payment-sips-bundle",
+    "name": "toodiz/payment-sips-bundle",
     "type": "symfony-bundle",
     "description": "",
     "keywords": [],
-    "homepage": "https://github.com/c6ril/payment-sips-bundle",
+    "homepage": "https://github.com/toodiz/payment-sips-bundle",
     "license": "MIT",
     "authors": [
         {
@@ -20,6 +20,6 @@
         "doctrine/common": "*"
     },
     "autoload": {
-        "psr-4": { "c6ril\\PaymentSipsBundle\\": "" }
+        "psr-4": { "toodiz\\PaymentSipsBundle\\": "" }
     }
 }

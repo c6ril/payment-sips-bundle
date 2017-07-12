@@ -1,6 +1,6 @@
 <?php
 
-namespace c6ril\PaymentSipsBundle\Plugin;
+namespace toodiz\PaymentSipsBundle\Plugin;
 
 use JMS\Payment\CoreBundle\PluginController\PluginControllerInterface;
 use JMS\Payment\CoreBundle\PluginController\Result;

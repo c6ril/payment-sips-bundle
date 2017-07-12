@@ -1,10 +1,10 @@
 <?php
 
-namespace c6ril\PaymentSipsBundle\Client;
+namespace toodiz\PaymentSipsBundle\Client;
 
 use Psr\Log\LoggerInterface;
 use Symfony\Component\Process\Process;
-use c6ril\PaymentSipsBundle\Exception\PaymentRequestException;
+use toodiz\PaymentSipsBundle\Exception\PaymentRequestException;
 
 class Client
 {

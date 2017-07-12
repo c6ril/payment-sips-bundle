@@ -1,12 +1,12 @@
 <?php
 
-namespace c6ril\PaymentSipsBundle\Tests\Plugin;
+namespace toodiz\PaymentSipsBundle\Tests\Plugin;
 
 use JMS\Payment\CoreBundle\Entity\FinancialTransaction;
 use JMS\Payment\CoreBundle\Entity\ExtendedData;
 use JMS\Payment\CoreBundle\Model\FinancialTransactionInterface;
 use JMS\Payment\CoreBundle\Plugin\PluginInterface;
-use c6ril\PaymentSipsBundle\Plugin\SipsPlugin;
+use toodiz\PaymentSipsBundle\Plugin\SipsPlugin;
 
 /**
  * @author Hubert Moutot <hubert.moutot@gmail.com>

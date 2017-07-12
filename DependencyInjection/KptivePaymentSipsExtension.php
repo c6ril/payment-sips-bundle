@@ -1,13 +1,13 @@
 <?php
 
-namespace c6ril\PaymentSipsBundle\DependencyInjection;
+namespace toodiz\PaymentSipsBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 use Symfony\Component\DependencyInjection\Loader;
 
-class c6rilPaymentSipsExtension extends Extension
+class KptivePaymentSipsExtension extends Extension
 {
     /**
      * {@inheritDoc}
@@ -30,7 +30,7 @@ class c6rilPaymentSipsExtension extends Extension
         // $container->setParameter('c6ril_payment_sips.config.normal_return_url', $config['normal_return_url']);
         // $container->setParameter('c6ril_payment_sips.config.cancel_return_url', $config['cancel_return_url']);
         // $container->setParameter('c6ril_payment_sips.config.automatic_response_url', $config['automatic_response_url']);
-        $container->setParameter('c6ril_payment_sips.config', $config['config']);
-        $container->setParameter('c6ril_payment_sips.bin', $config['bin']);
+        $container->setParameter('kptive_payment_sips.config', $config['config']);
+        $container->setParameter('kptive_payment_sips.bin', $config['bin']);
     }
 }

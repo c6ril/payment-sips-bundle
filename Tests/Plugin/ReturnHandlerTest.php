@@ -1,6 +1,6 @@
 <?php
 
-namespace c6ril\PaymentSipsBundle\Tests\Plugin;
+namespace toodiz\PaymentSipsBundle\Tests\Plugin;
 
 use JMS\Payment\CoreBundle\Entity\FinancialTransaction;
 use JMS\Payment\CoreBundle\Model\FinancialTransactionInterface;
@@ -9,7 +9,7 @@ use JMS\Payment\CoreBundle\Entity\ExtendedData;
 use JMS\Payment\CoreBundle\Entity\PaymentInstruction;
 use JMS\Payment\CoreBundle\Plugin\PluginInterface;
 use JMS\Payment\CoreBundle\PluginController\Result;
-use c6ril\PaymentSipsBundle\Plugin\ReturnHandler;
+use toodiz\PaymentSipsBundle\Plugin\ReturnHandler;
 
 /**
  * @author Hubert Moutot <hubert.moutot@gmail.com>
