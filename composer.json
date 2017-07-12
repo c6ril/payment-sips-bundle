@@ -7,10 +7,6 @@
     "license": "MIT",
     "authors": [
         {
-            "name":     "c6rilStudio",
-            "homepage": "http://c6ril.com"
-        },
-        {
             "name": "Hubert Moutot",
             "email": "hubert.moutot@gmail.com"
         }
@@ -25,5 +21,12 @@
     },
     "autoload": {
         "psr-4": { "c6ril\\PaymentSipsBundle\\": "" }
+    },
+
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.*"
+        }
     }
+    ]
 }
